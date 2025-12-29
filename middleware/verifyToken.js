@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
         return res.status(401).json({ message: "Unauthorized" });
     }
 
-    // Handle: "Bearer TOKEN"
+    // Handle: Bearer TOKEN
     const token = authHeader.startsWith("Bearer ")
         ? authHeader.split(" ")[1]
         : authHeader;

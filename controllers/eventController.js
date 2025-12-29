@@ -23,7 +23,7 @@ exports.getEvents = async (req, res) => {
     }
 };
 
-// 🔹 Update event
+// Update event
 exports.updateEvent = async (req, res) => {
     try {
         const updatedEvent = await Event.findByIdAndUpdate(
